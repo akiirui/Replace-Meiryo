@@ -28,7 +28,7 @@
 ./bin/merge-otd -o jpo3.otd -n 'Meiryo;Regular;;' ./latin3.otd ./jp3.otd
 ./bin/merge-otd -o jpo4.otd -n 'Meiryo;Medium;;' ./latin4.otd ./jp4.otd
 ./bin/merge-otd -o jpo5.otd -n 'Meiryo;Bold;;' ./latin5.otd ./jp5.otd
-./bin/merge-otd -o jpo6.otd -n 'Meiryo;Heavy;;' ./latin6.otd ./jp6.otd
+./bin/merge-otd -o jpo6.otd -n 'Meiryo;Black;;' ./latin6.otd ./jp6.otd
 
 # Merge Latin and Chinese Simplified characters into Microsoft YaHei
 ./bin/merge-otd -o cno1.otd -n 'Microsoft YaHei;ExtraLight;;' ./latin1.otd ./cn1.otd
@@ -36,7 +36,7 @@
 ./bin/merge-otd -o cno3.otd -n 'Microsoft YaHei;Regular;;' ./latin3.otd ./cn3.otd
 ./bin/merge-otd -o cno4.otd -n 'Microsoft YaHei;Medium;;' ./latin4.otd ./cn4.otd
 ./bin/merge-otd -o cno5.otd -n 'Microsoft YaHei;Bold;;' ./latin5.otd ./cn5.otd
-./bin/merge-otd -o cno6.otd -n 'Microsoft YaHei;Heavy;;' ./latin6.otd ./cn6.otd
+./bin/merge-otd -o cno6.otd -n 'Microsoft YaHei;Black;;' ./latin6.otd ./cn6.otd
 
 # Build Meiryo fonts
 mkdir -p ./Meiryo
@@ -45,7 +45,7 @@ mkdir -p ./Meiryo
 ./bin/otfccbuild ./jpo3.otd -O2 -o ./Meiryo/Meiryo-Regular.ttf
 ./bin/otfccbuild ./jpo4.otd -O2 -o ./Meiryo/Meiryo-Medium.ttf
 ./bin/otfccbuild ./jpo5.otd -O2 -o ./Meiryo/Meiryo-Bold.ttf
-./bin/otfccbuild ./jpo6.otd -O2 -o ./Meiryo/Meiryo-Heavy.ttf
+./bin/otfccbuild ./jpo6.otd -O2 -o ./Meiryo/Meiryo-Black.ttf
 
 # Build Microsoft YaHei fonts
 mkdir -p ./MicrosoftYaHei
@@ -54,4 +54,4 @@ mkdir -p ./MicrosoftYaHei
 ./bin/otfccbuild ./cno3.otd -O2 -o ./MicrosoftYaHei/MicrosoftYaHei-Regular.ttf
 ./bin/otfccbuild ./cno4.otd -O2 -o ./MicrosoftYaHei/MicrosoftYaHei-Medium.ttf
 ./bin/otfccbuild ./cno5.otd -O2 -o ./MicrosoftYaHei/MicrosoftYaHei-Bold.ttf
-./bin/otfccbuild ./cno6.otd -O2 -o ./MicrosoftYaHei/MicrosoftYaHei-Heavy.ttf
+./bin/otfccbuild ./cno6.otd -O2 -o ./MicrosoftYaHei/MicrosoftYaHei-Black.ttf
