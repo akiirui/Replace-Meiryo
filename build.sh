@@ -23,20 +23,20 @@
 ./bin/otfccdump -o cn6.otd /usr/share/fonts/adobe-source-han-sans/SourceHanSansCN-Heavy.otf
 
 # Merge Latin and Japanese characters into Meiryo
-./bin/merge-otd -o jpo1.otd -n 'Meiryo;ExtraLight;;' ./latin1.otd ./jp1.otd
-./bin/merge-otd -o jpo2.otd -n 'Meiryo;Light;;' ./latin2.otd ./jp2.otd
-./bin/merge-otd -o jpo3.otd -n 'Meiryo;Regular;;' ./latin3.otd ./jp3.otd
-./bin/merge-otd -o jpo4.otd -n 'Meiryo;Medium;;' ./latin4.otd ./jp4.otd
-./bin/merge-otd -o jpo5.otd -n 'Meiryo;Bold;;' ./latin5.otd ./jp5.otd
-./bin/merge-otd -o jpo6.otd -n 'Meiryo;Black;;' ./latin6.otd ./jp6.otd
+./bin/merge-otd -o jpo1.otd -n 'Meiryo;ExtraLight;;' ./latin1.otd ./jp1.otd ./cn1.otd
+./bin/merge-otd -o jpo2.otd -n 'Meiryo;Light;;' ./latin2.otd ./jp2.otd ./cn2.otd
+./bin/merge-otd -o jpo3.otd -n 'Meiryo;Regular;;' ./latin3.otd ./jp3.otd ./cn3.otd
+./bin/merge-otd -o jpo4.otd -n 'Meiryo;Medium;;' ./latin4.otd ./jp4.otd ./cn4.otd
+./bin/merge-otd -o jpo5.otd -n 'Meiryo;Bold;;' ./latin5.otd ./jp5.otd ./cn5.otd
+./bin/merge-otd -o jpo6.otd -n 'Meiryo;Black;;' ./latin6.otd ./jp6.otd ./cn6.otd
 
 # Merge Latin and Chinese Simplified characters into Microsoft YaHei
-./bin/merge-otd -o cno1.otd -n 'Microsoft YaHei;ExtraLight;;' ./latin1.otd ./cn1.otd
-./bin/merge-otd -o cno2.otd -n 'Microsoft YaHei;Light;;' ./latin2.otd ./cn2.otd
-./bin/merge-otd -o cno3.otd -n 'Microsoft YaHei;Regular;;' ./latin3.otd ./cn3.otd
-./bin/merge-otd -o cno4.otd -n 'Microsoft YaHei;Medium;;' ./latin4.otd ./cn4.otd
-./bin/merge-otd -o cno5.otd -n 'Microsoft YaHei;Bold;;' ./latin5.otd ./cn5.otd
-./bin/merge-otd -o cno6.otd -n 'Microsoft YaHei;Black;;' ./latin6.otd ./cn6.otd
+./bin/merge-otd -o cno1.otd -n 'Microsoft YaHei;ExtraLight;;' ./latin1.otd ./cn1.otd ./jp1.otd
+./bin/merge-otd -o cno2.otd -n 'Microsoft YaHei;Light;;' ./latin2.otd ./cn2.otd ./jp2.otd
+./bin/merge-otd -o cno3.otd -n 'Microsoft YaHei;Regular;;' ./latin3.otd ./cn3.otd ./jp3.otd
+./bin/merge-otd -o cno4.otd -n 'Microsoft YaHei;Medium;;' ./latin4.otd ./cn4.otd ./jp4.otd
+./bin/merge-otd -o cno5.otd -n 'Microsoft YaHei;Bold;;' ./latin5.otd ./cn5.otd ./jp5.otd
+./bin/merge-otd -o cno6.otd -n 'Microsoft YaHei;Black;;' ./latin6.otd ./cn6.otd ./jp6.otd
 
 # Build Meiryo fonts
 mkdir -p ./Meiryo
